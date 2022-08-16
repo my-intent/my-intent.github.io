@@ -43,11 +43,12 @@ function Gameplay()
             if(boxes[i].Collision(player)) 
             {
                 clearInterval(gameInterval);
-                ctx.beginPath();
-                ctx.fillStyle = 'red';
-                ctx.font = '100px cursive';
-                ctx.fillText('Game Over', (width-500)*0.5, height*0.7);
-                ctx.closePath();
+                // ctx.beginPath();
+                // ctx.fillStyle = 'red';
+                // ctx.font = '100px cursive';
+                // ctx.fillText('Game Over', (width-500)*0.5, height*0.7);
+                // ctx.closePath();
+                alert('Game Over');
                 document.body.appendChild(gameUI);
             }
 

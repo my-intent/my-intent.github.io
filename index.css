@@ -31,3 +31,9 @@ h1 {
     color: rgb(0, 255, 0);
     border: 2px solid rgb(0, 255, 0);
 }
+@media screen and (max-width: 360px)
+{
+    .collections {
+        grid-template-columns: 50% 50%;
+    }
+}
