@@ -21,6 +21,7 @@ canvas {
     font-size: 50px;
     font-family: cursive, Helvetica, sans-serif;
     text-align: center;
+    z-index: 10;
 }
 .BtnPlay {
     width: 110px;
@@ -30,4 +31,34 @@ canvas {
     font-size: 50px;
     font-family: cursive, Helvetica, sans-serif;
     border: none;
+}
+.PlayerController {
+    position: fixed;
+    left: 0px;
+    bottom: 20vh;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+.Btn {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.BtnLeft {
+    background-image: url("../Assets/Buttons/BtnLeft.png");
+}
+.BtnRight {
+    background-image: url("../Assets/Buttons/BtnRight.png");
+}
+@media screen and (max-width: 768px)
+{
+    .PlayerController {
+        display: flex;
+    }
 }
