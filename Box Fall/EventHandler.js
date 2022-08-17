@@ -1,4 +1,4 @@
-let horizontalDirection = 0;
+var horizontalDirection = 0;
 
 window.addEventListener('keydown', function(event)
 {

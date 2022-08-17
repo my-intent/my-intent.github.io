@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body, canvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+canvas {
+    background-color: rgb(31, 18, 34);
+}
+.gameUI {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    color: rgb(0, 255, 0);
+    background-color: transparent;
+    font-size: 50px;
+    font-family: cursive, Helvetica, sans-serif;
+    text-align: center;
+}
+.BtnPlay {
+    width: 110px;
+    height: 45px;
+    color: rgb(0, 255, 0);
+    background-color: transparent;
+    font-size: 50px;
+    font-family: cursive, Helvetica, sans-serif;
+    border: none;
+}

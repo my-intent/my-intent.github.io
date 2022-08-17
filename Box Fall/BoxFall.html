@@ -5,46 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Box Fall | Developer Ankit</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        html, body, canvas {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        canvas {
-            background-color: rgb(31, 18, 34);
-        }
-        .gameUI {
-            position: absolute;
-            top: 20%;
-            left: 0px;
-            width: 100%;
-            color: rgb(0, 255, 0);
-            background-color: transparent;
-            font-size: 50px;
-            font-family: cursive, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .play-btn {
-            width: 110px;
-            height: 45px;
-            color: rgb(0, 255, 0);
-            background-color: transparent;
-            font-size: 50px;
-            font-family: cursive, Helvetica, sans-serif;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="BoxFall.css">
 </head>
 <body>
     <div class="gameUI">
         <h1>Box Fall</h1>
-        <button onclick="Gameplay();" class="play-btn">play</button>
+        <button onclick="Gameplay();" class="BtnPlay">play</button>
     </div>
     <canvas>This Game does not support your Browser</canvas>
 

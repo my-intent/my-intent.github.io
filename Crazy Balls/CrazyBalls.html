@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Crazy Balls | Developer Ankit</title>
+    <link rel="stylesheet" href="CrazyBalls.css">
+</head>
+<body>
+    <div class="gameUI">
+        <h1>Crazy Balls</h1>
+        <button onclick="Gameplay();" class="BtnPlay">play</button>
+    </div>
+    <canvas>This Game does not support your Browser</canvas>
+
+    <div class="PlayerController">
+        <div class="LeftController">
+            <div 
+                ontouchstart="horizontalDirection = -1;" 
+                ontouchend="horizontalDirection = 0;" 
+                class="Btn BtnLeft">
+            </div>
+            <div 
+                ontouchstart="horizontalDirection = 1;" 
+                ontouchend="horizontalDirection = 0;" 
+                class="Btn BtnRight">
+            </div>
+        </div>
+        <div class="RightController">
+            <div 
+                ontouchstart="verticalDirection = -1;" 
+                ontouchend="verticalDirection = 0;" 
+                class="Btn BtnUp">
+            </div>
+            <div 
+                ontouchstart="verticalDirection = 1;" 
+                ontouchend="verticalDirection = 0;" 
+                class="Btn BtnDown">
+            </div>
+        </div>
+    </div>
+
+    <script src="EventHandler.js"></script>
+    <script src="BallClass.js"></script>
+    <script src="CrazyBalls.js"></script>
+</body>
+</html>
